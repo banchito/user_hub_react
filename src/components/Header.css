@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  font-family: 'Balsamic Sans', sans-serif;
+  font-size: 16px;
+
+  background: lightseagreen;
+  padding: 1em;
+}
+
+header h1 {
+  font-size: 2.4em;
+  font-style: italic;
+  color: white;
+  text-shadow: 1px 1px 3px black;
+}
+
+header .user-select {
+  display: flex;
+  flex-direction: row;
+}
+
+header .user-select select {
+  width: 16em;
+  margin-right: .5em;
+}
+
+header .user-select select,
+header .user-select button {
+  padding: 8px 12px;
+  border: 1px solid #333333;
+  border-radius: 4px;
+  outline: none;
+  background: #ffffff;
+  box-shadow: 0 3px 6px -5px;
+  color: #333333;
+  font-weight: bold;
+  font-size: 1em;
+}
