@@ -5,10 +5,11 @@ import ReactDOM from "react-dom";
 import { getUsers, getPostsByUser, getTodosByUser } from "./api";
 import { Header, UsersPosts, UserTodos } from "./components";
 import { BrowserRouter as Router, Route, Switch, Redirect} from 'react-router-dom';
+import {getCurrentUser} from './auth';
 
 const App = () => {
   const [userList, setUserList]       = useState([]);
-  const [currentUser, setCurrentUser] = useState(null);
+  const [currentUser, setCurrentUser] = useState(getCurrentUser());
   const [userPosts, setUserPosts]     = useState([]);
   const [userTodos, setUserTodos]     = useState([]);
 
