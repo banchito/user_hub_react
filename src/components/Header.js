@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import {storeCurrentUser, clearCurrentUser} from '../auth'
 import "./Header.css";
 
-const Header = ({ currentUser, setCurrentUser,userList }) => {
+const Header = ({ currentUser, setCurrentUser, userList }) => {
 
     const [selectedUser, setSelectedUser] = useState();
    
